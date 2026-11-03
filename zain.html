@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZAIN – زين | متجر الهواتف الذكية</title>
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="زين: أحدث الهواتف الذكية والإكسسوارات بأفضل الأسعار مع ضمان وشحن سريع.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#0a0a0c;--mu:#6b7280;--card:#f4f5f8;--line:#e3e5eb;--blue:#1f4bff;--inv:#0a0a0c;--invf:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0a0c;--fg:#f5f6fa;--mu:#9aa0ad;--card:#16171c;--line:#262830;--blue:#4d72ff;--inv:#f5f6fa;--invf:#0a0a0c}}
+*{box-sizing:border-box;margin:0}html,body{scroll-padding-top:70px}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.6 "IBM Plex Sans Arabic",system-ui,sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.w{max-width:1180px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:18px;height:64px}
+.logo{font-weight:700;font-size:22px;letter-spacing:.04em}.logo b{color:var(--blue)}
+nav{display:flex;gap:18px;flex:1;font-size:15px}nav a{color:var(--mu);text-decoration:none}nav a:hover{color:var(--fg)}
+.ic{display:flex;gap:6px;align-items:center}.ib{position:relative;padding:8px 10px;border-radius:10px;background:var(--card)}
+.ib i{position:absolute;top:-5px;inset-inline-end:-5px;background:var(--blue);color:#fff;border-radius:9px;font:700 11px/16px sans-serif;min-width:16px;text-align:center;font-style:normal}
+#burger{display:none}
+.hero{background:#0a0a0c;color:#fff;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:20px;min-height:560px}
+.hero h1{font-size:clamp(40px,7vw,84px);line-height:1.1;font-weight:700;letter-spacing:-.01em}
+.hero p{color:#aab0bf;font-size:19px;margin:18px 0 28px;max-width:46ch}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;font-weight:500;background:var(--blue);color:#fff;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.o{background:none;border:1px solid #ffffff55;color:#fff;margin-inline-start:10px}
+.btn.k{background:var(--inv);color:var(--invf)}.btn.f{width:100%;text-align:center}
+.glow{position:relative;display:grid;place-items:center}.glow:before{content:"";position:absolute;width:420px;max-width:90%;aspect-ratio:1;background:radial-gradient(circle,#1f4bffaa,#0000 68%);animation:p 6s ease-in-out infinite alternate}
+@keyframes p{to{transform:scale(1.15)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.glow svg{position:relative;width:min(300px,70%);filter:drop-shadow(0 30px 40px #000a);transform:rotate(-6deg)}
+section{padding:56px 0}h2{font-size:30px;margin-bottom:22px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-34px;position:relative}
+.trust div{background:var(--card);border-radius:14px;padding:16px;text-align:center;font-weight:500;border:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.bar input,.bar select{padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card)}.bar input{flex:1;min-width:180px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.chip{padding:7px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line)}.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px}
+.card{background:var(--card);border-radius:20px;padding:16px;position:relative;display:flex;flex-direction:column;gap:6px;transition:box-shadow .2s,transform .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #0000001f}
+.pic{aspect-ratio:1;display:grid;place-items:center;cursor:pointer}.pic svg{height:86%}
+.badge{position:absolute;top:14px;inset-inline-start:14px;background:var(--blue);color:#fff;border-radius:8px;padding:2px 9px;font-size:13px;font-weight:700}
+.wl{position:absolute;top:10px;inset-inline-end:10px;font-size:20px;color:var(--mu)}.wl.on{color:#e11d48}
+.br{color:var(--mu);font-size:13px}.nm{font-weight:700}.st{color:#f5a623;font-size:14px}.st small{color:var(--mu)}
+.pr b{font-size:18px}.pr s{color:var(--mu);font-size:14px;margin-inline-start:6px}
+.ok{font-size:13px;color:#0a8f4d}.no{font-size:13px;color:#d33}
+.row{display:flex;gap:8px;margin-top:auto}.row .btn{flex:1;padding:10px;text-align:center}.row .q{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:0 14px}
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.brands button{padding:22px;border-radius:16px;background:var(--card);font-weight:700;font-size:18px;border:1px solid var(--line)}.brands button:hover{background:var(--inv);color:var(--invf)}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.rev div{background:var(--card);padding:20px;border-radius:18px}
+.nl{background:var(--inv);color:var(--invf);border-radius:24px;padding:40px;text-align:center}
+.nl form{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}.nl input{padding:12px 16px;border-radius:99px;border:0;min-width:260px;color:#0a0a0c;background:#fff}
+footer{background:#0a0a0c;color:#aab0bf;padding:44px 0;font-size:15px}footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}footer h4{color:#fff;margin-bottom:8px}footer a{color:#aab0bf;display:block}
+.wa{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));inset-inline-start:18px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:26px;text-decoration:none;box-shadow:0 8px 20px #0004;z-index:15}
+.ov{position:fixed;inset:0;background:#000a;z-index:40;display:none;align-items:center;justify-content:center;padding:14px}.ov.on{display:flex}
+.md{background:var(--bg);border-radius:22px;max-width:760px;width:100%;max-height:92vh;overflow:auto;padding:24px;position:relative}
+.x{position:absolute;top:12px;inset-inline-end:14px;font-size:26px;color:var(--mu)}
+.dt{display:grid;grid-template-columns:1fr 1fr;gap:20px}.dt .pic{background:var(--card);border-radius:18px;cursor:default}
+.opt{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}.opt button{padding:6px 14px;border-radius:10px;border:1px solid var(--line)}.opt button.on{border-color:var(--blue);background:var(--blue);color:#fff}
+.sw{width:30px!important;height:30px;padding:0!important;border-radius:50%!important;border:2px solid var(--line)!important}.sw.on{outline:2px solid var(--blue);outline-offset:2px;background-clip:padding-box}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}td,th{padding:7px 8px;border-bottom:1px solid var(--line);text-align:start}
+.dr{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(420px,100%);background:var(--bg);z-index:41;transform:translateX(100%);transition:transform .3s;padding:20px;display:flex;flex-direction:column;overflow:auto}
+[dir=rtl] .dr{transform:translateX(-100%)}.dr.on{transform:none!important}
+.ci{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.ci svg{width:46px}.ci>div{flex:1;font-size:14px}
+.qt{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:99px}.qt button{padding:2px 12px;font-size:18px}
+.tot{margin:12px 0;display:grid;gap:4px}.tot div{display:flex;justify-content:space-between}
+form.f label{display:block;font-size:14px;margin-top:10px}form.f input,form.f select,form.f textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--card)}
+.er{color:#d33;font-size:12px;min-height:14px}
+#toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--inv);color:var(--invf);padding:10px 22px;border-radius:99px;z-index:60;opacity:0;transition:opacity .25s;pointer-events:none}#toast.on{opacity:1}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}.kp div{background:var(--card);padding:16px;border-radius:14px}.kp b{font-size:24px;display:block}
+.tb{overflow-x:auto}.tb td button{color:var(--blue);margin-inline-end:8px}
+@media(max-width:820px){nav{display:none;position:absolute;top:64px;inset-inline:0;background:var(--bg);flex-direction:column;padding:16px 20px;border-bottom:1px solid var(--line)}nav.on{display:flex}#burger{display:block}.hero .w,.dt{grid-template-columns:1fr}.hero .w{padding-top:30px;min-height:0}.glow{order:-1;height:280px}.trust{grid-template-columns:1fr 1fr}header .w{gap:8px}.logo{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="w"><button id="burger" class="ib" aria-label="menu" onclick="nav.classList.toggle('on')">☰</button>
+<a class="logo" href="#top" style="color:inherit;text-decoration:none">ZAIN<b> · </b><span id="lg">زين</span></a>
+<nav id="nav"></nav>
+<div class="ic"><button class="ib" onclick="toggleLang()" id="lb">EN</button><button class="ib" onclick="openWish()" aria-label="wishlist">♡<i id="wc">0</i></button><button class="ib" onclick="openCart()" aria-label="cart">🛒<i id="cc">0</i></button></div></div></header>
+<main id="top"></main>
+<a class="wa" href="https://wa.me/201019402015" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+<div class="ov" id="ov"><div class="md" id="md"></div></div>
+<aside class="dr" id="dr"></aside>
+<div id="toast" role="status"></div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const L={ar:{nav:["الرئيسية","الهواتف","الإكسسوارات","العروض","من نحن","تواصل معنا"],h:"كل التكنولوجيا بين إيديك",sub:"اكتشف أحدث الهواتف الذكية بأفضل الأسعار مع زين",shop:"تسوق الآن",off:"اكتشف العروض",feat:"المنتجات المميزة",best:"الأكثر مبيعًا",deals:"العروض الخاصة",brands:"الماركات",rv:"آراء العملاء",nl:"اشترك في نشرتنا البريدية",nlp:"أول من يعرف بالعروض الجديدة",sub2:"اشترك",search:"ابحث عن هاتف…",all:"الكل",sort:["الترتيب","الأعلى تقييمًا"],add:"أضف للسلة",qv:"نظرة سريعة",inS:"متوفر",out:"نفدت الكمية",cur:"ج.م",cart:"السلة",empty:"السلة فارغة. ابدأ بإضافة هاتف.",code:"كود الخصم",apply:"تطبيق",sub3:"المجموع",ship:"الشحن",disc:"الخصم",tot:"الإجمالي",chk:"إتمام الطلب",name:"الاسم",phone:"رقم الهاتف",addr:"العنوان",pay:"طريقة الدفع",cod:"الدفع عند الاستلام",card:"بطاقة بنك",place:"تأكيد الطلب",thanks:"تم استلام طلبك",free:"مجاني",about:"زين متجر مصري للهواتف الذكية والإكسسوارات: أجهزة أصلية، ضمان سنتان، وشحن لكل المحافظات.",ph:"الهاتف",cl:"اللون",stg:"السعة",ram:"الرام",wr:"ضمان سنتان من الوكيل",rel:"منتجات مشابهة",wl:"المفضلة",bad:"تحقق من الحقل",bad2:"كود غير صحيح",ok:"تم",rm:"حذف",adm:"لوحة التحكم",ords:"الطلبات",prods:"المنتجات",stock:"المخزون",sales:"المبيعات",cust:"العملاء",st:["جديد","قيد الشحن","تم التسليم"],newp:"منتج جديد",pn:"اسم المنتج",pp:"السعر",pd:"الخصم %",img:"صورة",save:"حفظ",lock:"كلمة مرور الإدارة",ct:"واتساب واتصال: 01019402015",rights:"© 2026 زين. جميع الحقوق محفوظة.",wa:"اطلب عبر واتساب",ask:"اسأل عن السعر",wa2:"أرسل الطلب عبر واتساب"},
+en:{nav:["Home","Phones","Accessories","Offers","About","Contact"],h:"All the tech, in your hands",sub:"Discover the latest smartphones at the best prices with ZAIN",shop:"Shop now",off:"See offers",feat:"Featured",best:"Best sellers",deals:"Special offers",brands:"Brands",rv:"Customer reviews",nl:"Join our newsletter",nlp:"Be first to hear about new deals",sub2:"Subscribe",search:"Search phones…",all:"All",sort:["Sort","Top rated"],add:"Add to cart",qv:"Quick view",inS:"In stock",out:"Out of stock",cur:"EGP",cart:"Cart",empty:"Your cart is empty. Add a phone to start.",code:"Discount code",apply:"Apply",sub3:"Subtotal",ship:"Shipping",disc:"Discount",tot:"Total",chk:"Checkout",name:"Name",phone:"Phone",addr:"Address",pay:"Payment",cod:"Cash on delivery",card:"Bank card",place:"Place order",thanks:"Order received",free:"Free",about:"ZAIN is an Egyptian store for smartphones and accessories: genuine devices, 2-year warranty, nationwide shipping.",ph:"Phones",cl:"Color",stg:"Storage",ram:"RAM",wr:"2-year official warranty",rel:"Related products",wl:"Wishlist",bad:"Check this field",bad2:"Invalid code",ok:"Done",rm:"Remove",adm:"Admin",ords:"Orders",prods:"Products",stock:"Stock",sales:"Sales",cust:"Customers",st:["New","Shipping","Delivered"],newp:"New product",pn:"Product name",pp:"Price",pd:"Discount %",img:"Image",save:"Save",lock:"Admin password",ct:"WhatsApp & calls: 01019402015",rights:"© 2026 ZAIN. All rights reserved.",wa:"Order via WhatsApp",ask:"Ask for price",wa2:"Send order on WhatsApp"}};
+const COL={"#111":"Black","#e8e8ec":"Silver","#2f5bff":"Blue","#c9a46a":"Gold"};
+const D=[["iPhone 16 Pro","Apple",62999,10,4.8,["#111","#e8e8ec","#c9a46a"],[256,512],8,12],["Galaxy S25 Ultra","Samsung",58999,15,4.7,["#111","#e8e8ec"],[256,512],12,9],["Redmi Note 14 Pro","Xiaomi",13999,12,4.5,["#111","#2f5bff"],[128,256],8,30],["OPPO Reno 13","OPPO",17999,8,4.4,["#2f5bff","#e8e8ec"],[256],12,18],["Huawei Pura 70","Huawei",39999,20,4.6,["#e8e8ec","#c9a46a"],[256,512],12,6],["Realme GT 7","Realme",21999,18,4.5,["#111","#c9a46a"],[256],12,0],["Galaxy A56","Samsung",16499,5,4.3,["#2f5bff","#111"],[128,256],8,25],["iPhone 15","Apple",42999,14,4.7,["#2f5bff","#111"],[128,256],6,15]].map((a,i)=>({id:i+1,n:a[0],b:a[1],p:a[2],d:a[3],r:a[4],c:a[5],s:a[6],ram:a[7],st:a[8],cat:"phone",img:""}));
+D.push({id:9,n:"Wireless charger 30W",b:"ZAIN",p:999,d:0,r:4.2,c:["#111"],s:[0],ram:0,st:50,cat:"acc",img:""},{id:10,n:"Pro earbuds",b:"ZAIN",p:2499,d:25,r:4.6,c:["#111","#e8e8ec"],s:[0],ram:0,st:40,cat:"acc",img:""});
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let lang=ld("zl","ar"),P=ld("zp",D),cart=ld("zc",[]),wish=ld("zw",[]),orders=ld("zo",[]),F={q:"",b:"",c:"",sort:0},code=null,adm=false;
+const t=k=>L[lang][k],fm=n=>Math.round(n).toLocaleString(lang=="ar"?"ar-EG":"en-US")+" "+t("cur"),pr=p=>p.p*(1-p.d/100);
+const phone=(c,img)=>img?`<img src="${img}" alt="" style="height:86%;border-radius:12px">`:`<svg viewBox="0 0 120 240"><rect x="6" y="4" width="108" height="232" rx="22" fill="${c}" stroke="#8a8f9c" stroke-width="2"/><rect x="14" y="12" width="92" height="216" rx="16" fill="#0a1030"/><circle cx="60" cy="24" r="5" fill="#000"/><rect x="22" y="50" width="76" height="70" rx="12" fill="#1f4bff" opacity=".85"/><rect x="22" y="132" width="50" height="8" rx="4" fill="#fff" opacity=".6"/><rect x="22" y="148" width="76" height="8" rx="4" fill="#fff" opacity=".25"/></svg>`;
+const stars=r=>"★".repeat(Math.round(r))+"☆".repeat(5-Math.round(r));
+function toast(m){const e=$("#toast");e.textContent=m;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1800)}
+function toggleLang(){lang=lang=="ar"?"en":"ar";sv("zl",lang);render()}
+function save(){sv("zp",P);sv("zc",cart);sv("zw",wish);sv("zo",orders)}
+function card(p){const w=wish.includes(p.id);return`<article class="card"><button class="wl ${w?"on":""}" onclick="tw(${p.id})" aria-label="wishlist">${w?"♥":"♡"}</button><div class="pic" onclick="det(${p.id})">${phone(p.c[0],p.img)}</div><span class="br">${p.b}</span><span class="nm">${p.n}</span><span class="st">${stars(p.r)} <small>${p.r}</small></span><span class="${p.st?"ok":"no"}">${p.st?"● "+t("inS"):t("out")}</span><div class="row">${p.cat=="acc"?`<button class="btn" onclick="ask(${p.id})">${t("wa")}</button>`:`<button class="btn" ${p.st?"":"disabled"} onclick="add(${p.id})">${t("add")}</button>`}<button class="q" onclick="det(${p.id})" title="${t("qv")}" aria-label="${t("qv")}">👁</button></div></article>`}
+function list(){let a=P.filter(p=>(!F.b||p.b==F.b)&&(!F.c||p.cat==F.c)&&(p.n+p.b).toLowerCase().includes(F.q.toLowerCase()));if(F.sort==1)a.sort((x,y)=>y.r-x.r);return a}
+function render(){document.documentElement.lang=lang;document.documentElement.dir=lang=="ar"?"rtl":"ltr";$("#lb").textContent=lang=="ar"?"EN":"ع";$("#lg").textContent=lang=="ar"?"زين":"";
+const ids=["top","shop","acc","deals","about","contact"];$("#nav").innerHTML=t("nav").map((x,i)=>`<a href="#${ids[i]}" onclick="nav.classList.remove('on');${i==2?"setC('acc')":i==1?"setC('phone')":""}">${x}</a>`).join("");
+const bs=[...new Set(P.map(p=>p.b))].filter(b=>b!="ZAIN");
+$("#top").innerHTML=`<div class="hero"><div class="w"><div><h1>${t("h")}</h1><p>${t("sub")}</p><a class="btn" href="#shop">${t("shop")}</a><a class="btn o" href="#deals">${t("off")}</a></div><div class="glow">${phone("#111")}</div></div></div>
+<div class="w"><div class="trust"><div>🚚 ${lang=="ar"?"شحن لكل المحافظات":"Nationwide shipping"}</div><div>🛡 ${t("wr")}</div><div>✔ ${lang=="ar"?"أجهزة أصلية 100%":"100% genuine"}</div><div>↩ ${lang=="ar"?"استبدال خلال 14 يوم":"14-day exchange"}</div></div></div>
+<section id="shop"><div class="w"><h2>${t("feat")}</h2><div class="bar"><input id="sq" value="${F.q}" placeholder="${t("search")}" aria-label="search" oninput="F.q=this.value;gl()"><select onchange="F.sort=+this.value;gl()" aria-label="sort">${t("sort").map((s,i)=>`<option value="${i}" ${F.sort==i?"selected":""}>${s}</option>`).join("")}</select></div>
+<div class="chips"><button class="chip ${F.b?"":"on"}" onclick="F.b='';render()">${t("all")}</button>${bs.map(b=>`<button class="chip ${F.b==b?"on":""}" onclick="F.b='${b}';render()">${b}</button>`).join("")}</div><div class="grid" id="gl">${list().map(card).join("")}</div></div></section>
+<section id="best" style="background:var(--card)"><div class="w"><h2>${t("best")}</h2><div class="grid">${[...P].sort((a,b)=>a.st-b.st).filter(p=>p.cat=="phone"&&p.st).slice(0,4).map(card).join("")}</div></div></section>
+<section id="deals"><div class="w"><h2>${t("deals")}</h2><div class="grid">${P.filter(p=>p.d>=15).slice(0,4).map(card).join("")}</div></div></section>
+<section id="acc" style="background:var(--card)"><div class="w"><h2>${lang=="ar"?"الإكسسوارات":"Accessories"}</h2><div class="grid">${P.filter(p=>p.cat=="acc").map(card).join("")}</div></div></section>
+<section><div class="w"><h2>${t("brands")}</h2><div class="brands">${bs.map(b=>`<button onclick="F.b='${b}';render();location.hash='shop'">${b}</button>`).join("")}</div></div></section>
+<section style="background:var(--card)"><div class="w"><h2>${t("rv")}</h2><div class="rev">${(lang=="ar"?[["أحمد م.","وصلني الجهاز في يومين وكان مغلفًا بالكامل. تعامل ممتاز."],["سارة ع.","السعر أقل من أي مكان تاني، والضمان واضح من أول يوم."],["كريم ح.","استبدلت الجهاز بسهولة. خدمة العملاء ردت على واتساب فورًا."]]:[["Ahmed M.","Arrived in two days, sealed box. Great experience."],["Sara A.","Cheaper than anywhere else, warranty is clear."],["Karim H.","Exchange was easy and WhatsApp support replied instantly."]]).map(r=>`<div><span class="st">★★★★★</span><p>${r[1]}</p><b>${r[0]}</b></div>`).join("")}</div></div></section>
+<section id="about"><div class="w"><h2>${t("nav")[4]}</h2><p style="max-width:62ch">${t("about")}</p><br><div class="nl"><h2 style="margin:0">${t("nl")}</h2><p>${t("nlp")}</p><form onsubmit="nlSub(event)"><input type="email" required placeholder="email@example.com" aria-label="email"><button class="btn">${t("sub2")}</button></form></div></div></section>
+<footer id="contact"><div class="w"><div><h4>ZAIN – زين</h4>${t("ct")}</div><div><h4>${lang=="ar"?"فروعنا":"Our branches"}</h4>1. مطروح - العلمين - أول شارع المدارس (الفرع الرئيسي)<br>2. مطروح - العلمين - بورتو جولف - المشاية بجوار كافيه تريبل<br>3. مطروح - العلمين - بورتو مارينا 3<br>4. مطروح - الضبعة - مول 1 محطة الضبعة النووية</div><div><h4>${t("nav")[1]}</h4><a href="#shop">${t("ph")}</a><a href="#acc">${t("nav")[2]}</a><a href="#deals">${t("nav")[3]}</a></div><div><h4>${lang=="ar"?"تابعنا":"Follow us"}</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#" onclick="admin();return false">${t("adm")}</a></div><div>${t("rights")}</div></div></footer>`;
+cnt()}
+function gl(){$("#gl").innerHTML=list().map(card).join("")}
+function setC(c){F.c=c=="phone"?"":c;render()}
+function cnt(){$("#cc").textContent=cart.reduce((a,x)=>a+x.q,0);$("#wc").textContent=wish.length}
+function tw(id){wish=wish.includes(id)?wish.filter(x=>x!=id):[...wish,id];save();render()}
+function add(id,o={}){const p=P.find(x=>x.id==id),k=id+"|"+(o.c||p.c[0])+"|"+(o.s||p.s[0]);const e=cart.find(x=>x.k==k);if(e)e.q=Math.min(p.st,e.q+(o.q||1));else cart.push({k,id,c:o.c||p.c[0],s:o.s||p.s[0],q:o.q||1});save();cnt();toast(t("ok")+" ✓");closeM()}
+function openM(h){$("#md").innerHTML=`<button class="x" onclick="closeM()" aria-label="close">×</button>`+h;$("#ov").classList.add("on")}
+function closeM(){$("#ov").classList.remove("on")}$("#ov").onclick=e=>{if(e.target.id=="ov")closeM()};
+let sel={};
+function det(id){const p=P.find(x=>x.id==id);sel={c:p.c[0],s:p.s[0],q:1};const rel=P.filter(x=>x.id!=id&&x.cat==p.cat).slice(0,3);
+openM(`<div class="dt"><div class="pic" id="dp">${phone(sel.c,p.img)}</div><div><span class="br">${p.b}</span><h2 style="margin:0 0 6px">${p.n}</h2><span class="st">${stars(p.r)} ${p.r}</span><p style="margin:8px 0"><button class="btn k" onclick="ask(${p.id})">💬 ${t("ask")}</button></p>
+<p style="font-size:14px;color:var(--mu)">${lang=="ar"?"شاشة متطورة وأداء سريع وكاميرا احترافية وبطارية تدوم يومًا كاملًا.":"Brilliant display, fast performance, pro camera and all-day battery."}</p>
+<b>${t("cl")}</b><div class="opt">${p.c.map(c=>`<button class="sw ${c==sel.c?"on":""}" style="background:${c}" title="${COL[c]||""}" onclick="sel.c='${c}';$('#dp').innerHTML=phone('${c}','${p.img}');this.parentNode.querySelectorAll('button').forEach(b=>b.classList.remove('on'));this.classList.add('on')"></button>`).join("")}</div>
+${p.s[0]?`<b>${t("stg")}</b><div class="opt">${p.s.map(s=>`<button class="${s==sel.s?"on":""}" onclick="sel.s=${s};this.parentNode.querySelectorAll('button').forEach(b=>b.classList.remove('on'));this.classList.add('on')">${s} GB</button>`).join("")}</div>`:""}
+<div class="opt" style="align-items:center"><span class="qt"><button onclick="sq(-1)">−</button><span id="sqn">1</span><button onclick="sq(1,${p.st})">+</button></span><button class="btn" style="flex:1" ${p.st?"":"disabled"} onclick="add(${p.id},sel)">${t("add")}</button></div>
+<small>🛡 ${t("wr")}</small></div></div>
+<table><tr><th>${lang=="ar"?"المواصفات":"Specs"}</th><th></th></tr><tr><td>${t("ram")}</td><td>${p.ram?p.ram+" GB":"—"}</td></tr><tr><td>${lang=="ar"?"الشاشة":"Display"}</td><td>${p.cat=="phone"?"6.7″ OLED 120Hz":"—"}</td></tr><tr><td>${lang=="ar"?"البطارية":"Battery"}</td><td>${p.cat=="phone"?"5000 mAh":"—"}</td></tr></table>
+<h4>${t("rel")}</h4><div class="grid" style="grid-template-columns:repeat(3,1fr)">${rel.map(r=>`<div class="card" onclick="det(${r.id})" style="cursor:pointer"><div class="pic" style="aspect-ratio:1.4">${phone(r.c[0],r.img)}</div><span class="nm" style="font-size:14px">${r.n}</span></div>`).join("")}</div>`)}
+function sq(d,m){sel.q=Math.max(1,Math.min(m||99,sel.q+d));$("#sqn").textContent=sel.q}
+function totals(){const sub=cart.reduce((a,x)=>a+pr(P.find(p=>p.id==x.id))*x.q,0),ds=code?sub*code:0,sh=sub-ds>=30000||!sub?0:100;return{sub,ds,sh,tot:sub-ds+sh}}
+function drawer(h){$("#dr").innerHTML=h;$("#dr").classList.add("on")}
+function closeD(){$("#dr").classList.remove("on")}
+function openCart(){cart=cart.filter(x=>P.find(p=>p.id==x.id));const T=totals();
+drawer(`<div style="display:flex;justify-content:space-between"><h2 style="margin:0">${t("cart")}</h2><button onclick="closeD()" style="font-size:26px">×</button></div>
+${cart.length?cart.map((x,i)=>{const p=P.find(q=>q.id==x.id);return`<div class="ci">${phone(x.c,p.img)}<div><b>${p.n}</b><br>${x.s?x.s+" GB":""}<br><span class="qt"><button onclick="cq(${i},-1)">−</button>${x.q}<button onclick="cq(${i},1)">+</button></span></div><button onclick="cart.splice(${i},1);save();openCart();cnt()" aria-label="${t("rm")}">🗑</button></div>`}).join(""):`<p style="margin:30px 0;color:var(--mu)">${t("empty")}</p>`}
+${cart.length?`<button class="btn f" style="margin-top:14px" onclick="chk()">${t("chk")}</button>`:""}`)}
+function cq(i,d){const p=P.find(x=>x.id==cart[i].id);cart[i].q=Math.max(1,Math.min(p.st,cart[i].q+d));save();openCart();cnt()}
+function cd(e){e.preventDefault();if($("#cdi").value.trim().toUpperCase()=="ZAIN10"){code=.1;toast(t("ok"))}else toast(t("bad2"));openCart()}
+function openWish(){drawer(`<div style="display:flex;justify-content:space-between"><h2 style="margin:0">${t("wl")}</h2><button onclick="closeD()" style="font-size:26px">×</button></div>${wish.length?wish.map(id=>{const p=P.find(x=>x.id==id);return p?`<div class="ci">${phone(p.c[0],p.img)}<div><b>${p.n}</b><br>${fm(pr(p))}</div><button class="btn" style="padding:6px 14px" onclick="add(${p.id});openWish()">+</button></div>`:""}).join(""):`<p style="color:var(--mu);margin-top:30px">♡</p>`}`)}
+function chk(){closeD();const T=totals();openM(`<h2>${t("chk")}</h2><form class="f" onsubmit="place(event)" novalidate><label>${t("name")}<input name="n" autocomplete="name"></label><div class="er" data-e="n"></div><label>${t("phone")}<input name="p" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX"></label><div class="er" data-e="p"></div><label>${t("addr")}<textarea name="a" rows="2"></textarea></label><div class="er" data-e="a"></div><label>${t("pay")}<select name="m"><option>${t("cod")}</option><option>${t("card")}</option></select></label><button class="btn f" id="pb">${t("place")}</button></form>`)}
+function place(e){e.preventDefault();const f=e.target,v={n:esc(f.n.value.trim()).slice(0,60),p:f.p.value.trim().slice(0,11),a:esc(f.a.value.trim()).slice(0,200)};const bad={n:v.n.length<3,p:!/^01[0-25]\d{8}$/.test(v.p),a:v.a.length<8};f.querySelectorAll(".er").forEach(x=>x.textContent=bad[x.dataset.e]?t("bad"):"");if(Object.values(bad).some(Boolean))return;
+const T=totals(),b=$("#pb");b.disabled=true;b.textContent="…";setTimeout(()=>{const o={id:"ZN"+(1000+orders.length+1),cu:v.n,ph:v.p,ad:v.a,tot:T.tot,st:0,items:cart.map(x=>({id:x.id,q:x.q})),d:new Date().toISOString().slice(0,10)};cart.forEach(x=>{const p=P.find(q=>q.id==x.id);if(p)p.st=Math.max(0,p.st-x.q)});orders.push(o);cart=[];code=null;save();render();openM(`<div style="text-align:center;padding:30px"><div style="font-size:56px">✅</div><h2>${t("thanks")}</h2><p>#${o.id}</p><br><a class="btn" target="_blank" rel="noopener" href="${waLink(o)}">${t("wa2")}</a></div>`)},700)}
+const NUM="201019402015";
+function waLink(o){const m=`${o.id}\n`+o.items.map(i=>{const p=P.find(x=>x.id==i.id);return(p?p.n:"")+" ×"+i.q}).join("\n")+`\n${o.cu} - ${o.ph}\n${o.ad}`;return"https://wa.me/"+NUM+"?text="+encodeURIComponent(m)}
+function ask(id){const p=P.find(x=>x.id==id);window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent((lang=="ar"?"أريد الاستفسار عن: ":"I would like to ask about: ")+p.n),"_blank")}
+function pimg(i,el){const f=el.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const c=document.createElement("canvas"),s=Math.min(1,600/Math.max(im.width,im.height));c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);P[i].img=c.toDataURL("image/jpeg",.8);save();render();admin();toast(t("ok")+" ✓")};im.src=r.result};r.readAsDataURL(f)}
+function nlSub(e){e.preventDefault();e.target.reset();toast(t("ok")+" ✓")}
+let tries=0;async function askPw(){if(tries>=3){toast("Locked");return}const p=prompt(t("lock"));if(!p)return;const h=[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(p)))].map(b=>b.toString(16).padStart(2,"0")).join("");if(h=="70a78a3835ce44e9f9da782bf9091864c0ab19ebb1ae2862fc5f85cf36f7b5a0"){adm=true;tries=0;admin()}else{tries++;toast(t("bad"))}}
+function admin(){if(!adm){askPw();return}
+const rev=orders.reduce((a,o)=>a+o.tot,0),cu=[...new Set(orders.map(o=>o.ph))].length;
+openM(`<h2>${t("adm")}</h2><div class="kp"><div><b>${fm(rev)}</b>${t("sales")}</div><div><b>${orders.length}</b>${t("ords")}</div><div><b>${cu}</b>${t("cust")}</div><div><b>${P.reduce((a,p)=>a+p.st,0)}</b>${t("stock")}</div></div>
+<h4>${t("ords")}</h4><div class="tb"><table>${orders.length?orders.map((o,i)=>`<tr><td>${o.id}</td><td>${o.cu}<br><small>${o.ph}</small></td><td>${fm(o.tot)}</td><td><select onchange="orders[${i}].st=+this.value;save()">${t("st").map((s,j)=>`<option value="${j}" ${o.st==j?"selected":""}>${s}</option>`).join("")}</select></td></tr>`).join(""):"<tr><td>—</td></tr>"}</table></div>
+<h4>${t("prods")}</h4><div class="tb"><table>${P.map((p,i)=>`<tr><td>${p.n}</td><td><input type="number" value="${p.p}" style="width:90px" onchange="P[${i}].p=+this.value;save()" aria-label="${t("pp")}"></td><td><input type="number" value="${p.d}" min="0" max="90" style="width:56px" onchange="P[${i}].d=+this.value;save()" aria-label="${t("pd")}">%</td><td><input type="number" value="${p.st}" min="0" style="width:60px" onchange="P[${i}].st=+this.value;save()" aria-label="${t("stock")}"></td><td><input type="file" accept="image/*" style="width:100px" onchange="pimg(${i},this)" aria-label="${t("img")}"></td><td><button onclick="P.splice(${i},1);save();admin();render()">🗑</button></td></tr>`).join("")}</table></div>
+<h4>${t("newp")}</h4><form class="f" onsubmit="np(event)"><input name="n" required placeholder="${t("pn")}"><input name="b" required placeholder="Brand" list="bl"><datalist id="bl">${[...new Set(P.map(p=>p.b))].map(b=>`<option>${b}</option>`).join("")}</datalist><input name="p" type="number" min="1" required placeholder="${t("pp")}"><input name="d" type="number" min="0" max="90" value="0"><input name="s" type="number" min="0" value="10"><select name="c"><option value="phone">${t("ph")}</option><option value="acc">${t("nav")[2]}</option></select><label>${t("img")}<input name="i" type="file" accept="image/*"></label><br><button class="btn f">${t("save")}</button></form>`)}
+function np(e){e.preventDefault();const f=e.target,go=img=>{P.push({id:Date.now(),n:esc(f.n.value.trim()).slice(0,80),b:esc(f.b.value.trim()).slice(0,40),p:+f.p.value,d:+f.d.value,r:4.5,c:["#111"],s:[f.c.value=="phone"?128:0],ram:f.c.value=="phone"?8:0,st:+f.s.value,cat:f.c.value,img});save();render();admin();toast(t("ok")+" ✓")},fl=f.i.files[0];if(fl){const r=new FileReader();r.onload=()=>go(r.result);r.readAsDataURL(fl)}else go("")}
+document.addEventListener("keydown",e=>{if(e.key=="Escape"){closeM();closeD()}});
+render();
+</script>
+</body>
+</html>
